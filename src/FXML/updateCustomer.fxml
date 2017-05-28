@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="313.0" stylesheets="@../Css/Style.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageCustomerController">
+   <children>
+      <Label fx:id="nameLb" layoutX="32.0" layoutY="25.0" prefHeight="17.0" prefWidth="40.0" text="Name" />
+      <Label fx:id="cprLb" layoutX="31.0" layoutY="61.0" prefHeight="17.0" prefWidth="82.0" text="CPR number" />
+      <Label fx:id="addressLb" layoutX="32.0" layoutY="98.0" prefHeight="17.0" prefWidth="73.0" text="Address" />
+      <TextField fx:id="nameIn" layoutX="133.0" layoutY="20.0" promptText="customer name" />
+      <TextField fx:id="cprIn" layoutX="133.0" layoutY="56.0" promptText="123456-7890" />
+      <TextField fx:id="addressIn" layoutX="133.0" layoutY="93.0" promptText="address" />
+      <Button layoutX="184.0" layoutY="212.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="25.0" prefWidth="98.0" text="Update" />
+      <Button fx:id="cancelBtn" layoutX="64.0" layoutY="212.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="25.0" prefWidth="98.0" text="Cancel" />
+      <TextField fx:id="emailIn" layoutX="133.0" layoutY="126.0" promptText="email" />
+      <TextField fx:id="phoneIn" layoutX="133.0" layoutY="160.0" promptText="phone number" />
+      <Label fx:id="emailLb" layoutX="31.0" layoutY="131.0" text="Email" />
+      <Label fx:id="phoneLb" layoutX="33.0" layoutY="165.0" text="Phone number" />
+   </children>
+</AnchorPane>

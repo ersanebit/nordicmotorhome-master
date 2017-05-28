@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="500.0" stylesheets="@../Css/Style.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddMotorhomeController">
+   <children>
+      <Button fx:id="btnClose" layoutX="115.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnCloseAction" prefHeight="49.0" prefWidth="140.0" text="Close" />
+      <Label fx:id="lbBrand" layoutX="55.0" layoutY="80.0" prefHeight="17.0" prefWidth="70.0" text="Brand" />
+      <Label fx:id="lbModel" layoutX="55.0" layoutY="110.0" prefHeight="17.0" prefWidth="70.0" text="Model" />
+      <Label fx:id="lbCapacity" layoutX="55.0" layoutY="140.0" prefHeight="17.0" prefWidth="70.0" text="Capacity" />
+      <TextField fx:id="brandIn" layoutX="125.0" layoutY="80.0" promptText="enter brand" />
+      <TextField fx:id="modelIn" layoutX="125.0" layoutY="110.0" promptText="enter model" />
+      <TextField fx:id="capacityIn" layoutX="125.0" layoutY="140.0" promptText="enter capcity eg. 5" />
+      <Label fx:id="lbPrice" layoutX="55.0" layoutY="170.0" prefHeight="17.0" prefWidth="70.0" text="Price" />
+      <Label fx:id="lbKmDriven" layoutX="55.0" layoutY="200.0" prefHeight="17.0" prefWidth="70.0" text="Km Driven" />
+      <TextField fx:id="priceIn" layoutX="125.0" layoutY="170.0" promptText="enter price eg 200.50" />
+      <TextField fx:id="kmDrivenIn" layoutX="125.0" layoutY="200.0" promptText="enter km eg. 100" />
+      <Button fx:id="btnCancelCreateMotorhome" layoutX="124.0" layoutY="240.0" mnemonicParsing="false" onAction="#cancelCreateMotorhome" prefHeight="40.0" prefWidth="150.0" text="Cancel">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnCreateMotorhome" layoutX="289.0" layoutY="240.0" mnemonicParsing="false" onAction="#createMotorhome" prefHeight="40.0" prefWidth="150.0" text="Create Motorhome">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Label fx:id="lbCreateTitle" layoutX="115.0" layoutY="25.0" prefHeight="27.0" prefWidth="341.0" text="CREATE MOTORHOME">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="lbModelInfo" layoutX="289.0" layoutY="110.0" prefHeight="17.0" prefWidth="150.0" text="*" />
+      <Label fx:id="lbCapacityInfo" layoutX="289.0" layoutY="140.0" prefHeight="17.0" prefWidth="150.0" text="*" />
+      <Label fx:id="lbPriceInfo" layoutX="289.0" layoutY="170.0" prefHeight="17.0" prefWidth="150.0" text="*" />
+      <Label fx:id="lbKmDrivenInfo" layoutX="289.0" layoutY="200.0" prefHeight="17.0" prefWidth="150.0" text="*" />
+      <Label fx:id="lbBrandInfo" layoutX="289.0" layoutY="80.0" prefHeight="17.0" prefWidth="150.0" text="*" />
+      <Label fx:id="lbBrandSC" layoutX="115.0" layoutY="90.0" prefHeight="17.0" prefWidth="252.0" text="*" />
+      <Label fx:id="lbModelSC" layoutX="115.0" layoutY="115.0" prefHeight="17.0" prefWidth="252.0" text="*" />
+      <Label fx:id="lbCapacitySC" layoutX="115.0" layoutY="140.0" prefHeight="17.0" prefWidth="252.0" text="*" />
+      <Label fx:id="lbPriceSC" layoutX="115.0" layoutY="165.0" prefHeight="17.0" prefWidth="252.0" text="*" />
+      <Label fx:id="lbKmDrivenSC" layoutX="115.0" layoutY="190.0" prefHeight="17.0" prefWidth="252.0" text="*" />
+   </children>
+</Pane>
