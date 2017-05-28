@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="593.0" stylesheets="@../Css/Style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CancelReservationController">
+   <children>
+      <Button layoutX="446.0" layoutY="537.0" mnemonicParsing="false" onAction="#btnConfirmOnClick" prefHeight="25.0" prefWidth="131.0" text="Confirm Cancel" />
+      <Button layoutX="317.0" layoutY="537.0" mnemonicParsing="false" onAction="#btnCancelOnClick" prefHeight="25.0" prefWidth="102.0" text="Back" />
+      <TableView fx:id="tblViewMot" layoutX="17.0" layoutY="72.0" prefHeight="168.0" prefWidth="560.0" />
+      <Label layoutX="17.0" layoutY="44.0" text="Motorhome Lists:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="14.0" text="Cancel Reservation Confirmation Page">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="258.0" text="Pricing Information for cancelling this reservation:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="461.0" text="Total Price:">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalPrice" layoutX="426.0" layoutY="461.0" text="price">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="291.0" text="Reservation date:" />
+      <Label layoutX="17.0" layoutY="317.0" text="Start date:" />
+      <Label layoutX="17.0" layoutY="345.0" text="End date:" />
+      <Label layoutX="17.0" layoutY="369.0" text="Number of days before rental starts:" />
+      <Label layoutX="17.0" layoutY="423.0" text="Percentage to be paid:" />
+      <Label fx:id="lblReservationDate" layoutX="128.0" layoutY="291.0" text="Label" />
+      <Label fx:id="lblStartDate" layoutX="88.0" layoutY="317.0" text="Label" />
+      <Label fx:id="lblEndDate" layoutX="80.0" layoutY="345.0" text="Label" />
+      <Label fx:id="lblDays" layoutX="236.0" layoutY="369.0" text="Label" />
+      <Label layoutX="17.0" layoutY="396.0" text="Reservation Price:" />
+      <Label fx:id="lblReservationPrice" layoutX="127.0" layoutY="396.0" text="Label" />
+      <Label fx:id="lblPercentage" layoutX="153.0" layoutY="423.0" text="Label" />
+      <Label layoutX="17.0" layoutY="444.0" text="*Minimum 200 euro ">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
